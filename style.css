@@ -1,0 +1,260 @@
+body{
+  font-family: Arial;
+  font-size: medium; 
+  background-color: #af8784;
+  background-image: url("./images/hero-banner.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+header{
+  background-color: #3E302F;
+  color: #ae9a66;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  position: relative;
+  height: 700px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+footer{
+  background-color: #755C5A;
+  color: rgb(0, 0, 0);
+  border-style: dashed;
+  border-width: 6px;
+  border-color: rgba(0, 0, 0, 0.373);
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+img{
+  border-radius: 25px;
+  border-width: 10px;
+  border-style: solid;
+  height: 500px; 
+  width: 350px;
+}
+
+section{
+  margin-bottom: 20px;
+  margin-right: 30px;
+  position: relative;
+}
+
+section > aside{
+  background-color: #755C5A;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1;
+}
+
+aside > h2{
+  color: #dfd7c1;
+}
+
+article{
+  display: flex;
+}
+
+article > h2{
+  color: #5d584a;
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+@keyframes bobbinganimation{
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(20px);}
+}
+
+.work{
+  background-color: #583F3B;
+  padding: 15px;
+  animation-name: bobbinganimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  height: 300px;
+}
+
+.education{
+  background-color: #795752;
+  padding: 15px;
+  animation-name: bobbinganimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+}
+
+.skills{
+  background-color: #664340;
+  padding: 15px;
+  width: 200px;
+  animation-name: bobbinganimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.3s;
+}
+
+.passions{
+  background-color: #805F5A;
+  padding: 15px;
+  width: 200px;
+  height: 125px;
+  animation-name: bobbinganimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.4s;
+}
+
+.languages{
+  background-color: #6B4E49;
+  padding: 15px;
+  width: 200px;
+  height: 100px;
+  animation-name: bobbinganimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+.paragraphs{
+  align-self: center;
+  margin-right: 30px;
+}
+
+.lists{
+  align-self: center;
+}
+
+@media screen and (min-width: 425px){
+  body{
+    font-size: smaller;
+  }
+
+  header{
+    height: 350px;
+  }
+
+  footer{
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  textarea{
+    width: 150px;
+  }
+
+  img{
+    width: 200px;
+    height: auto;
+  }
+
+  .flex-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  article{
+    flex-direction: column;
+  }
+
+  section > aside{
+    width: 125px;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    font-size: small;
+  }
+
+  header{
+    height: 350px;
+  }
+
+  footer{
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  img{
+    width: 200px;
+    height: auto;
+  }
+
+  .flex-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  article{
+    flex-direction: column;
+  }
+
+  section > aside{
+    width: 125px;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  body{
+    font-size: small;
+  }
+
+  header{
+    height: 400px;
+    width: 1250px;
+  }
+
+  footer{
+    padding: 20px;
+    flex-direction: row;
+  }
+
+  img{
+    width: 200px;
+    height: auto;
+  }
+
+  section > aside{
+    width: 200px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .paragraphs{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lists{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
